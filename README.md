@@ -13,22 +13,16 @@ Installation guide
 3) If you use Apache, you should create a new VirtualHost, for example in the httpd-vhosts.conf file you should add:
 
 <VirtualHost *:80>
-
         DocumentRoot "#YOUR_DIRECTORY#/rest/web"
         DirectoryIndex  app.php
-
         ServerName  local.rest
         ServerAlias local.rest
-
         <Directory "#YOUR_DIRECTORY#/rest/web">
-              
 			AllowOverride None
 			Order Allow,Deny
 			Allow from All
-			
 			<IfModule mod_rewrite.c>
 				Options +MultiViews
-			
 				RewriteEngine On
 				RewriteCond %{REQUEST_FILENAME} !-f
 				RewriteRule ^(.*)$ app.php [QSA,L]
@@ -45,7 +39,7 @@ Installation guide
 ======================
 Units Test
 
-To run the unit tests, run: vendor / bin / phpunit --filter ApiRestControllerTest
+To run the unit tests, run: vendor/bin/phpunit --filter ApiRestControllerTest
 
 ======================
 PSR Fixer
