@@ -4,7 +4,6 @@ namespace AppBundle\Controller;
 
 use FOS\RestBundle\Controller\FOSRestController;
 use FOS\RestBundle\Controller\Annotations\Route;
-use Symfony\Component\Debug\Exception\OutOfMemoryException;
 
 class ApiRestController extends FOSRestController
 {
