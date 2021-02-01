@@ -34,6 +34,7 @@ Installation guide
 				RewriteRule ^(.*)$ app.php [QSA,L]
 			</IfModule>
         </Directory>
+        
 </VirtualHost>
 
 4) Add in the hosts file: 127.0.0.1 local.rest
