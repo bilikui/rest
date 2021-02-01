@@ -19,3 +19,4 @@ parameters:
     secret: ThisTokenIsNotSoSecretChangeIt
 
     maximum_difference_value_between_min_max: 500
+    restapi_log_path: '%kernel.logs_dir%/restapi.log'

@@ -43,5 +43,9 @@ class ApiRestControllerTest extends WebTestCase
         $client->request('GET', '/fizzbuzz/1.5/10.25');
 
         $this->assertEquals($client->getResponse()->getContent(), $result);
+
+        $client->request('GET', '/fizzbuzz/0/9999999999999');
+
+        $this->assertEquals($client->getResponse()->getContent(), $result);
     }
 }
