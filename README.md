@@ -1,5 +1,5 @@
 # Rest Proyect
-Author: Gustavo Luis
+Author: Gustavo Luis <br/>
 Date 01/02/2021
 ======================
 Made in Symfony 3.4
@@ -42,12 +42,12 @@ Installation guide
 
 6) Enter a web browser and go to the following url: http://local.rest/fizzbuzz/:min/:max where :min and :max are input parameters
 
-==================
+======================
 Units Test
 
 To run the unit tests, run: vendor / bin / phpunit --filter ApiRestControllerTest
 
-=================
+======================
 PSR Fixer
 
 To run PSR Fixer, run: vendor/bin/php-cs-fixer fix src
